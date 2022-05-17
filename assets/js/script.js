@@ -4,7 +4,7 @@
 
 
 
-axios.get('https://nekos.life/api/neko').then(function(response) { console.log(response)}).catch(function(error) { console.log(error)});
+axios.get('https://nekos.life/api/neko').then(function(response) { console.log(response.data.neko)}).catch(function(error) { console.log(error)});
 
 /*
 axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
