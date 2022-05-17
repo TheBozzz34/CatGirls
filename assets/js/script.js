@@ -7,14 +7,14 @@
 axios.get('https://nekos.life/api/neko').then(function(response) {
     console.log(response.data.neko) 
     var imgN = document.createElement("img"); 
-    imgN.src = data.neko;
+    imgN.src = response;
+    var div = document.getElementById("mainDiv");
+    imgN.setAttribute("style", "height: 400px;");
+    imgN.setAttribute("width", "height: 50px;");
+    imgN.setAttribute("border", "border: 5px solid #5539cc;");
+    div.appendChild(imgN);
 }).catch(function(error) { console.log(error)});
-
-var div = document.getElementById("mainDiv");
-imgN.setAttribute("style", "height: 400px;");
-imgN.setAttribute("width", "height: 50px;");
-imgN.setAttribute("border", "border: 5px solid #5539cc;");
-div.appendChild(imgN);  
+  
 
 /*
 axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
