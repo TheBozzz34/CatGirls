@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios').default;
 
 axios.get('http://api.nekos.fun:8080/api/foxgirl')
   .then(function (response) {
