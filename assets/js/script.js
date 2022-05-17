@@ -9,7 +9,7 @@ axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
 
   .then(function (response) {
       const imageID = response;
-        console.log(imageID);
+        console.log(imageID.status);
       //console.log(response.data.images.id);
   })
   .catch(function (error) {
