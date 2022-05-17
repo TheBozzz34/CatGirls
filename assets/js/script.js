@@ -14,8 +14,21 @@ axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
         //console.log(myValues);
         const myJSON = JSON.stringify(myValues);
         console.log(myJSON);
-        const myOBJ = JSON.parse(myJSON);
-        console.log(myOBJ);
+        var searchTest = function(varToSearch, jsonData) {
+
+            for (var key in jsonData) {
+                if(typeof(jsonData[key]) === 'object') {
+                    searchTest(varToSearch, jsonData[key]);
+                } else {
+                    if(jsonData[key] == varToSearch) {
+                        console.log(jsonData[key]);
+                    }
+                }
+            }
+        
+        }
+        
+        searchTest('id', myJSON);
       //console.log(response.data.images.id);
   })
   .catch(function (error) {
