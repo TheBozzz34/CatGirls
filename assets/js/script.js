@@ -2,7 +2,7 @@
 
 let options = {
     headers: {
-      'Access-Control-Allow-Origin': 'nekos.moe',
+      'Access-Control-Allow-Origin': '*',
       'Content-Type': 'application/json'
     }
   }
