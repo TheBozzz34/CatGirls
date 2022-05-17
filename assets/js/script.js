@@ -4,7 +4,9 @@
 
 
 
+axios.get('https://nekos.life/api/neko').then(function(response) { console.log(response)}).catch(function(error) { console.log(error)});
 
+/*
 axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
 
   .then(function (response) {
@@ -14,21 +16,7 @@ axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
         //console.log(myValues);
         const myJSON = JSON.stringify(myValues);
         console.log(myJSON);
-        var searchTest = function(varToSearch, jsonData) {
-
-            for (var key in jsonData) {
-                if(typeof(jsonData[key]) === 'object') {
-                    searchTest(varToSearch, jsonData[key]);
-                } else {
-                    if(jsonData[key] == varToSearch) {
-                        console.log(jsonData[key]);
-                    }
-                }
-            }
-        
-        }
-        
-        searchTest('id', myJSON);
+        const valueREGEX = /[id:]/
       //console.log(response.data.images.id);
   })
   .catch(function (error) {
@@ -38,6 +26,8 @@ axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
   .then(function () {
     console.log('done');
   });
+
+  */
 
 
 console.log("Hello World!");
