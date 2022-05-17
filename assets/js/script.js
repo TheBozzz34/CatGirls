@@ -3,7 +3,7 @@
 let options = {
     headers: {
       'User-Agent': 'catgirlsaresexy.org random image fetcher',
-      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Origin': 'nekos.moe',
       'Content-Type': 'application/json',
       "Access-Control-Allow-Credentials": "true",
       "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
@@ -13,7 +13,7 @@ let options = {
 
 
 
-header("Access-Control-Allow-Origin: *");
+
 
 axios.get('https://nekos.moe/api/v1/random/image?nsfw=false', options)
 
