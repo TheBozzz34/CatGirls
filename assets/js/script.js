@@ -1,17 +1,11 @@
 //const axios = require('axios').default;
 
-let options = {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'application/json'
-    }
-  }
 
 
 
 
 
-axios.get('https://nekos.moe/api/v1/random/image?nsfw=false', options)
+axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
 
   .then(function (response) {
     axios.get('https://nekos.moe/api/v1/image/' + response, options).then(console.log(response))
@@ -25,7 +19,7 @@ axios.get('https://nekos.moe/api/v1/random/image?nsfw=false', options)
   });
 
 
-  axios.get("https://nekos.moe/api/v1/random/image?nsfw=false", options)
+  axios.get("https://nekos.moe/api/v1/random/image?nsfw=false")
   .then(response => {
     // access parsed JSON response data using response.data field
     data = response.data
