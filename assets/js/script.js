@@ -4,7 +4,11 @@
 
 
 
-axios.get('https://nekos.life/api/neko').then(function(response) { console.log(response.data.neko)}).catch(function(error) { console.log(error)});
+axios.get('https://nekos.life/api/neko').then(function(response) {
+    console.log(response.data.neko) 
+    var imgN = document.createElement("img"); 
+    imgN.src = data.neko;
+}).catch(function(error) { console.log(error)});
 
 var div = document.getElementById("mainDiv");
 imgN.setAttribute("style", "height: 400px;");
