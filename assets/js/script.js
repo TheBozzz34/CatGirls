@@ -25,6 +25,32 @@ axios.get('https://nekos.moe/api/v1/random/image?nsfw=false', options)
     console.log('done');
   });
 
+
+  axios.get("https://nekos.moe/api/v1/random/image?nsfw=false", options)
+  .then(response => {
+    // access parsed JSON response data using response.data field
+    data = response.data
+    var imgN = document.createElement("img");
+    imgN.src = data.neko;
+    console.log(imgN.src);
+    //var div = document.getElementById("mainDiv");
+    //imgN.setAttribute("style", "height: 400px;");
+    //imgN.setAttribute("width", "height: 50px;");
+    //imgN.setAttribute("border", "border: 5px solid #5539cc;");
+    //div.appendChild(imgN);
+    //block.setAttribute("style", "text-align:center");
+
+    //div.appendChild(imgN);    
+  })
+  .catch(error => {
+    if (error.response) {
+      //get HTTP error code
+      console.log(error.reponse.status)
+    } else {
+      console.log(error.message)
+    }
+  })
+
 console.log("Hello World!");
 
 document.body.style.backgroundColor = "#563d7c";
