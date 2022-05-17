@@ -8,7 +8,7 @@
 axios.get('https://nekos.moe/api/v1/random/image?nsfw=false')
 
   .then(function (response) {
-    axios.get('https://nekos.moe/api/v1/image/' + response).then(console.log(response))
+      console.log(response.images);
   })
   .catch(function (error) {
     // handle error
