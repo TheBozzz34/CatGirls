@@ -2,7 +2,6 @@
 
 let options = {
     headers: {
-      'User-Agent': 'catgirlsaresexy.org random image fetcher',
       'Access-Control-Allow-Origin': 'nekos.moe',
       'Content-Type': 'application/json'
     }
