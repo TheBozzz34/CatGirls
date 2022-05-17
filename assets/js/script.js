@@ -1,9 +1,15 @@
 //const axios = require('axios').default;
 
-axios.get('http://api.nekos.fun:8080/api/foxgirl/')
+let options = {
+    headers: {
+      'User-Agent': 'catgirlsaresexy.org random image fetcher'
+    }
+  }
+
+axios.get('https://nekos.moe/api/v1/random/image?nsfw=false', options)
+
   .then(function (response) {
-    // handle success
-    console.log(response);
+    axios.get('https://nekos.moe/api/v1/image/' + response, options).then(console.log(response))
   })
   .catch(function (error) {
     // handle error
