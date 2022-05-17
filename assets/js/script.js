@@ -13,7 +13,7 @@ let options = {
 
 
 
-
+header("Access-Control-Allow-Origin: *");
 
 axios.get('https://nekos.moe/api/v1/random/image?nsfw=false', options)
 
