@@ -7,7 +7,7 @@
 axios.get('https://nekos.life/api/neko').then(function(response) {
     console.log(response.data.neko) 
     var imgN = document.createElement("img"); 
-    imgN.src = response;
+    imgN.src = response.data.neko;
     var div = document.getElementById("mainDiv");
     imgN.setAttribute("style", "height: 400px;");
     imgN.setAttribute("width", "height: 50px;");
