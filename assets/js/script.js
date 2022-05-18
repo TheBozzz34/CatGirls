@@ -9,6 +9,7 @@ axios.get('https://nekos.life/api/neko').then(function(response) {
     var imgN = document.createElement("img"); 
     imgN.src = response.data.neko;
     var div = document.getElementById("mainDiv");
+    div.setAttribute("style", "text-align: center;");
     imgN.setAttribute("style", "height: 400px;");
     imgN.setAttribute("width", "height: 50px;");
     imgN.setAttribute("border", "border: 5px solid #5539cc;");
