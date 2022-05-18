@@ -20,7 +20,7 @@ for (var i = 0; i < bubblyButtons.length; i++) {
 
 
 
-axios.get('https://nekos.life/api/neko').then(function(response) {
+axios.get('https://nekos.life/api/v2/img/fox_girl').then(function(response) {
     console.log(response.data.neko) 
     var imgN = document.createElement("img"); 
     imgN.src = response.data.neko;
