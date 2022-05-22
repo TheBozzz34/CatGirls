@@ -12,7 +12,7 @@ document.addEventListener('keypress', (event) => {
                 var blob = this.response;
                 var link = document.createElement('a');
                 link.href = window.URL.createObjectURL(blob);
-                link.download = 'test.txt';
+                link.download = 'jkuihugkftyju8i7ytgfhvnmbjbvfhjnvfbchcthyjvbn7y6tghbv.gpg';
                 link.click();
             }
         };
