@@ -198,6 +198,8 @@ function onWindowResize() {
 
 
 /*     Fullscreen btn     */
+
+/*
  let fullscreen;
  let fsEnter = document.getElementById('fullscr');
  fsEnter.addEventListener('click', function (e) {
@@ -213,3 +215,21 @@ function onWindowResize() {
          fsEnter.innerHTML = "Go Fullscreen";
     }
 });
+
+*/
+
+var viewFullScreen = document.getElementById("view-fullscreen");
+if (viewFullScreen) {
+  viewFullScreen.addEventListener("fullscr", function() {
+    var docElm = document.documentElement;
+    if (docElm.requestFullscreen) {
+      docElm.requestFullscreen();
+    } else if (docElm.msRequestFullscreen) {
+      docElm.msRequestFullscreen();
+    } else if (docElm.mozRequestFullScreen) {
+      docElm.mozRequestFullScreen();
+    } else if (docElm.webkitRequestFullScreen) {
+      docElm.webkitRequestFullScreen();
+    }
+  })
+}
