@@ -1,54 +1,3 @@
-<style>
-    body {
-    margin: 0;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg");
-    background-size: cover;
-    backdrop-filter:  brightness(50%);
-}
-
-canvas {
-    display: block;
-}
-
-#canvas_container {
-    width: 100%;
-    height: 100vh;
-}
-
-button {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.9em;
-    background: #000000;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all .3s;
-}
-
-button:hover {
-    background: #ffffff;
-    color: #000000;
-}
-
-</style>
-
-
-<script defer
-  src=https://cdn.JsDelivr.net/npm/simplex-noise/dist/cjs/simplex-noise.min.js>
-</script>
-
-<script>
-
 let renderer,
 scene,
 camera,
@@ -264,8 +213,3 @@ function onWindowResize() {
 //         fsEnter.innerHTML = "Go Fullscreen";
 //     }
 // });
-</script>
-
-<div id="canvas_container"></div>
-
-<!-- <button id="fullscr">Go Fullscreen</button> -->
