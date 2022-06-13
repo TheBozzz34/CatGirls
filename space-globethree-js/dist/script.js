@@ -218,9 +218,9 @@ function onWindowResize() {
 
 */
 
-var viewFullScreen = document.getElementById("view-fullscreen");
+var viewFullScreen = document.getElementById("fullscr");
 if (viewFullScreen) {
-  viewFullScreen.addEventListener("fullscr", function() {
+  viewFullScreen.addEventListener("click", function() {
     var docElm = document.documentElement;
     if (docElm.requestFullscreen) {
       docElm.requestFullscreen();
